@@ -1,0 +1,30 @@
+<div class="bar bar-standard bar-footer-secondary mb-51">
+    <button id="salva" class="btn btn-primary btn-block close-modal">
+        Aggiungi
+    </button>
+</div>
+
+
+<div class=" content-padded">
+    <form class="input-group">
+        <div class="input-row">
+            
+            <select>
+                {{#each lista}}
+                <option value="{{this.Id}}">{{this.Nome}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="input-row">
+            <label id="misura"></label>
+            <input id="dosaggio" type="number" value="" placeholder="Inserisci dosaggio" class="dosage">
+
+        </div>
+        <div class="input-row">
+            <label>Ora</label>
+            <input id="orario" placeholder="Inserisci orario" class="timepicker">
+        </div>
+
+
+    </form>
+</div>

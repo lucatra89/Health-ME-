@@ -1,0 +1,497 @@
+/* Your app's CSS, go crazy, make it your own */
+
+/**
+    GENERAL
+*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Bold.ttf') format("truetype");
+}
+
+#main, main-content-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+#content {
+    overflow-y: initial;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0;
+}
+
+.main-content-wrapper {
+    height: 100%;
+}
+
+.content-view-container {
+    margin: 50px 0 0 0;
+    position: fixed;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.all-container{
+    height: 100%;
+}
+
+.all-container, .all-container > *{
+    position: fixed;
+    top: 0;
+}
+
+.title {
+    font-family: "Roboto", sans-serifn;
+    letter-spacing: 1px;
+}
+
+.main-shadow-container {
+    height: 88px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+
+/**
+    LOGO
+*/
+
+#logo-wrapper {
+    width: 150px;
+    margin: auto;
+}
+
+#logo-wrapper img {
+    width: 100%;
+}
+
+/**
+    BAR
+*/
+.main-bar .title{
+    position: relative;
+}
+
+/**
+    CARD
+*/
+
+.card-titlebar, .event-card-details {
+    position: inherit;
+}
+
+.card-titlebar .title {
+    position: inherit;
+    margin: auto;
+}
+
+/**
+    MENU
+*/
+
+.transition-effect{
+    -webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -ms-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
+}
+
+.main-menu-container {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    position: relative;
+    z-index: 120;
+    left: -80%;
+    width: 80%;
+    border-right: 1px solid #dddddd;
+}
+
+.main-menu-container .bar{
+    position: relative;
+    top:0;
+}
+
+.transition{
+    left: 0;
+}
+.transition80{
+    left: 80%;
+}
+
+.transition-effect-bottom{
+    -webkit-transition: bottom 1s ease;
+    -moz-transition: bottom 1s ease;
+    -ms-transition: bottom 1s ease;
+    -o-transition: bottom 1s ease;
+    transition: bottom 1s ease;
+    position: relative;
+    bottom: -20px;
+}
+
+.alert-container{
+    color: #d9534f;
+    text-align: center;
+}
+
+.transitionBottom0{
+    bottom: 0px;
+}
+
+.main-menu .tab-icon {
+    font-size: 40px;
+}
+
+/**
+    EVENT
+*/
+.events-slider-container {
+    height: 85%;
+}
+
+#guidaEvento span {
+    vertical-align: super;
+}
+
+/* Container for the event-card image, crops the image */
+.event-card-image-crop {
+    height: 200px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.event-card-image-crop.big {
+    height: 230px;
+}
+
+.item.event-card-image-crop.big {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(221, 221, 221);
+}
+
+.event-card-image-crop > .event-card-image, .event-card-image-crop.big > .event-card-image {
+    /* Scale width preserving ratio */
+    width: 100%;
+    height: 100%;
+}
+
+.item.event-card-image-crop.nothing-todo {
+    border-style: none;
+    width: 100%;
+}
+
+/* Image associated to the event
+.event-card-image {
+	width: 100%;
+	position: absolute;
+	top: -50px;
+}   */
+
+/* Title of the event */
+.event-card-title {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Time of the alarm triggered by the event */
+.event-card-details h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.event-card-details h2 i {
+    margin: 0 10px 0 0;
+}
+
+/* Details button for the event */
+.event-card-details>span {
+    float: right;
+    line-height: 25px;
+}
+
+.event-card-details > h1 {
+    margin-bottom: 0px;
+}
+
+event-card-detail h2 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.item-input {
+    margin-bottom: 15px;
+}
+
+.slider-pager {
+    bottom: 10px;
+}
+
+.slider-pager .slider-pager-page.active {
+    color: #145fd7;
+}
+
+.card {
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    margin: 0px 20px;
+}
+
+.card, .list-inset {
+    background-color: transparent;
+}
+
+.tabs {
+    height: 15%;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.tab-icon-center {
+    border-top-width: 0px;
+    border-left: 3px solid rgb(68, 68, 68);
+    border-right: 3px solid rgb(68, 68, 68);
+}
+
+.bar-subheader {
+    -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+#bar-footer {
+    padding: 0px;
+}
+
+/**
+    PLUS BUTTON
+*/
+
+.operation-header {
+    text-align: center;
+    margin: 0 0 25px 0;
+    padding: 10px;
+}
+
+.operation-header i {
+    font-size: 44px;
+}
+
+.operation-header span {
+    display: block;
+}
+
+/**
+    LOGIN
+*/
+#loginview.content-view-container {
+    margin-top: 0px;
+}
+
+/**
+    HOME
+*/
+
+#homeview.content-view-container {
+    margin-top: 130px;
+    position: relative;
+}
+
+/**
+    NOTE
+*/
+#listanoteview .note-item-photo {
+    width: 100%;
+}
+
+textarea#descrizionenota {
+    height: 100px;
+}
+
+/**
+    PRINCIPIO ATTIVO
+*/
+
+.lista-principio-attivo {
+    width: 80%;
+    float: left;
+}
+
+/*  SLIDE-BOX */
+.slider {
+    background-color: transparent;
+}
+
+.slide-container {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #dddddd;
+}
+
+/*  TABLE */
+.col-55 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 55%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 55%;
+    -ms-flex: 0 0 55%;
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.col > input[type=checkbox] {
+    align-self: center;
+}
+
+/*
+    NOTIFICATION
+*/
+
+.notification-container {
+    margin-top: 30px;
+}
+
+.item.event-card-details {
+    margin: 0px;
+    border-radius: 0px;
+    border-width: 0px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/**
+    LISTA
+*/
+
+.list h3 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.lista-patologie.table-view-cell {
+    padding: 11px 15px;
+}
+
+
+#loginview > div{
+    position: relative;
+    top: 10%;
+}
+
+#loginview form {
+    margin-top: 90px;
+}
+
+.icon-menu-container {
+    width: 40px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.text-item-menu {
+    position: absolute;
+    top: 30%;
+}
+
+/*.bar {
+    border-bottom-style: none;
+}    */
+
+#main-menu .table-view {
+    border-top-style: none;
+}
+
+.table-view-cell.lista-nuove-patologie > .aggiungi-patologia > i {
+    font-size: 40px;
+}
+
+.table-view-cell.lista-nuove-patologie > .aggiungi-patologia {
+    position: relative;
+    left: 50px;
+}
+
+.table-view-cell.lista-nuove-patologie > a {
+    position: absolute;
+    top: 30%;
+}
+
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 5%;
+    /* display: block; */
+    width: 90%;
+    margin: auto;
+}
+
+ul.slider-dots{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    color: #428BCA;
+}
+
+ul.slider-dots > li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.slider-dots > li:last-child{
+    margin-right: 0;
+}
+
+.input-row input {
+    position: relative;
+    z-index: 100;
+}
+
+input.invalid{
+    border-color: #D9534F;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url("../img/alert.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+.form-container{
+    position: relative;
+    top: 90px;
+}
+
+/*.form-container .input-group .input-row{
+    width: 99%;
+} */
+
+#guidaeventoview .table-view-cell{
+    padding: 11px 15px 11px 15px;
+}
+
+.input-row textarea{
+    border-bottom-style: none;
+}
+
+.clear{
+    clear: both;
+}

@@ -1,0 +1,17 @@
+<a class="navigate-right">
+    <div class="media-object pull-left">
+        <img src={{#if uri}} {{uri}} {{else}}""{{/if}} onerror="this.remove();">
+        <span class="icon icon-compose"></span>
+    </div>
+    <div class="media-body">
+        {{Titolo}}
+        {{#if lemma}}
+        <p class="subtitle">{{lemma}}</p>
+        {{/if}}
+        <p>{{Descrizione}}</p>
+    </div>
+</a>
+
+<button class="btn btn-link btn-nav  pull-right">
+    <span class="icon icon-trash"></span>
+</button>

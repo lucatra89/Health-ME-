@@ -1,0 +1,50 @@
+<div class="bar bar-standard bar-footer-secondary mb-51" id="logout">
+    <button class="btn btn-block btn-negative">Logout</button>
+</div>
+
+<div class="content ">
+    <form class="input-group">
+        <input id="nome" name="Nome" type="text" placeholder="Nome" class="halfwidth"  value={{profilo.Nome}}>
+        <input id= "cognome" name="Cognome" type="text" placeholder="Cognome" class="halfwidth"  value={{profilo.Cognome}}>
+        <input id= "nascita" name="Nascita" type="text" placeholder="Data di nascita" class="datepicker " value={{profilo.Nascita_s}}>
+        <select data-name='Sesso' id='sesso'>
+            <option value="nonspecificato" >Sesso</option>
+            <option value="uomo">Uomo</option>
+            <option value="donna">Donna</option>
+        </select>
+        <select  id='grupposanguigno'>
+           <option value="nonspecificato" >Gruppo sanguigno non selezionato</option>
+            <option value="zeronegativo">zeronegativo</option>
+            <option value="zeropositivo">zeropositivo</option>
+            <option value="Anegativo">Anegativo</option>
+            <option value="Apositivo">Apositivo</option>
+            <option value="Bnegativo">Bnegativo</option>
+            <option value="Bpositivo">Bpositivo</option>
+            <option value="ABnegativo">ABnegativo</option>
+            <option value="ABpositivo">ABpositivo</option>
+        </select>
+
+        <div class="input-row " >
+            <label>Altezza(cm)</label> <input id="altezza" name="Altezza" type="number" placeholder="Inserisci" 
+            value={{profilo.Altezza}}>
+        </div>
+        <div class="input-row ">
+            <label>Peso(kg)</label> <input id="peso" name="Peso" type="number" placeholder="Peso"
+            value={{profilo.Peso}}>
+        </div>
+        <div class="input-row">
+            <label>Allergie</label> <input id="allergie" name="Allergie" type="text" placeholder="Inserisci"
+            {{#if profilo.Anamnesi}} value={{profilo.Anamnesi.Allergie}} {{/if}} > 
+        </div>
+        <div class="input-row">
+            <label>AllergieFarmaci</label> <input id="allergiefarmaci" name="AllergieFarmaci" type="text" placeholder="Inserisci"
+            {{#if profilo.Anamnesi}}  value={{profilo.Anamnesi.AllergieFarmaci}}  {{/if}}>
+        </div>
+        <select  id="medico">
+            <option  value="" >Nessun Medico </option>
+            {{#each medici}}
+            <option value={{Id}}>{{this.Nome}} {{this.Cognome}} </option>
+            {{/each}}
+        </select>
+    </form>
+</div>

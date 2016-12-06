@@ -1,0 +1,31 @@
+<div class="bar bar-standard bar-footer-secondary mb-91" id="salta">
+
+    <button class="btn btn-negative btn-block" id='salta'>
+        Salta
+    </button>
+</div>
+<div class="bar bar-standard bar-footer-secondary mb-51" id="salva">
+    <button class="btn btn-primary btn-block ">
+        Salva
+    </button>
+</div>
+
+<div class="content content-padded">
+    <form>
+
+        {{#each Parametri}}
+        <div>
+            <label>{{this.Nome}}</label>
+            <input type="number" class="parametro" value="" name="${{this.Id}}"/>
+        </div>
+        {{/each}}
+
+        <div>
+            <label>Nota</label>
+            <input type="text" value="" name="Nota"/>
+        </div>
+        <label>Acquisizione</label>
+        <input name="Acquisizione" type="text" class="timepicker " value="{{moment}}">
+
+    </form>
+</div>

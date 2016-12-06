@@ -1,0 +1,45 @@
+<div class="bar bar-standard bar-footer-secondary mb-91" >
+    <button class="btn btn-block btn-primary btn-outlined"  id="profilo">Profilo</button>
+</div>
+<div class="bar bar-standard bar-footer-secondary mb-51" >
+    <button class="btn btn-block btn-negative" id="sos"><a href="ok">SOS </a></button>
+</div>
+
+<div>
+    <div class=" todo">
+        <div class="todo_title">
+            <span>Prossime misurazioni</span>
+        </div>
+        <div>
+
+            <ul class="table-view">
+                {{#each misurazioni}}
+                <li class="table-view-cell">
+                        <span class="badge badge-primary future ">{{this.orario}}</span>
+                        {{this.nome}}
+                </li>
+                {{else}}
+                NESSUNA MISURAZIONE
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="todo_title">
+            <span>Prossimi farmaci</span>
+        </div>
+        <div>
+            <ul class="table-view">
+
+               {{#each farmaci}}
+               <li class="table-view-cell">
+                        <span class="badge badge-primary future ">{{this.orario}}</span>
+                        {{this.nome}}
+                </li>
+                {{else}}
+                NESSUN FARMACO
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

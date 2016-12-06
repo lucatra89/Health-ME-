@@ -1,0 +1,310 @@
+    .todo .table-view {
+        margin-bottom: 0;
+    }
+    .todo_title {
+        font-size: 0.6em;
+        text-align: center;
+        background-color: aliceblue;
+        height:30px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+    }
+    .title.small {
+        font-size: 0.65em;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        padding: 0 15%;
+    }
+    .icon-bars + .icon-left-nav + a .title {
+        padding: 0 24%;
+    }
+    .bar-tab i.fa {
+        font-size: 1.4em;
+        position: relative;
+        top: 10%;
+    }
+    .bar-header-secondary .btn {
+        position: absolute;
+        top: 15%;
+    }
+    .table-view {
+        border-top:none;
+    }
+    .future {
+        border:1px solid #428bca;
+        background: none;
+        color: #428bca;
+    }
+    .icon-bars + .icon {
+        margin-left: 13px;
+    }
+    .table-view-cell button {
+        display: none;
+    }
+    .selected {
+        background: aliceblue;
+    }
+    .btn .icon-trash {
+        font-size: 1.5em;
+    }
+    .selected .badge {
+        display: none;
+    }
+    .selected + button {
+        display: block;
+    }
+
+    .table-view-cell a{
+        transition : left 0.12s ease-out;
+        -webkit-transition:left 0.12s ease-out;
+        left: 0;
+
+    }
+
+    a.swiped{
+        left: -27%;
+        transition : left 0.12s ease-out;
+        -webkit-transition:left 0.12s ease-out;
+    }
+
+    button.btn.swipe.pull-right {
+        transition : right 0.12s ease-out;
+        -webkit-transition:right 0.12s ease-out;
+        display: block;
+        right: -20%;
+    }
+
+    button.btn.swipe.pull-right.swiped{
+        right: 0;
+    }
+
+    .navigate-right.selected:after {
+        content:'';
+    }
+    .media-object.pull-left {
+        width: 20%;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        font-family: FontAwesome;
+        font-size: 2em;
+        color: #ddd;
+        position: relative;
+    }
+    .media-object.pull-left img {
+        position: absolute;
+        width: 100%;
+        min-height: 10%;
+    }
+    .toggle:before {
+        font-size: 10px;
+    }
+    .toggle.active {
+        background-color: rgb(58, 155, 215);
+        border: 2px solid rgb(58, 155, 215);
+    }
+    .toggle.active .toggle-handle {
+        border-color: rgb(58, 155, 215);
+    }
+    .toggle.alarm:before {
+        content:'email';
+        color: white;
+    }
+    .toggle.alarm {
+        background-color: rgb(58, 155, 215);
+        border: 2px solid rgb(58, 155, 215);
+    }
+    .toggle.alarm .toggle-handle {
+        border-color: rgb(58, 155, 215);
+    }
+    .toggle.active.alarm:before {
+        content:'sms';
+    }
+    .table-view.settings {
+        margin-bottom: 5px;
+        font-size: 0.8em;
+    }
+    .input-group.settings {
+        font-size: 0.8em;
+    }
+    .input-group.settings label {
+        width: 40%;
+    }
+    .input-group.settings input {
+        text-align: end;
+        width: 60%;
+        font-size: 0.95em;
+    }
+     input.halfwidth{
+        width: 49%;
+    }
+
+    .input-group label + input{
+        text-align: end;
+    }
+    .pull-right + .pull-right {
+        margin-right: 5%;
+    }
+    .table-view.filter {
+        margin-bottom: 5px;
+    }
+    .filter li {
+        font-size: 0.8em;
+    }
+    .filter .toggle:before {
+        content:'';
+    }
+    .bar-footer-secondary.mb-51 {
+        bottom: 51px;
+        border-top: none;
+    }
+    .bar-footer-secondary.mb-91 {
+        bottom: 91px;
+        border-top: none;
+    }
+    input.title {
+        display: none;
+        border: none;
+        margin-top: 4px;
+    }
+    .bar.search .title {
+        display: none;
+    }
+    .bar.search input.title {
+        display: block;
+    }
+    .bar input.title:focus{
+        border-bottom: 1px solid rgb(80, 147, 223);
+    }
+    .bar input.title {
+        width: 90%;
+        right: 10%;
+        text-align: center;
+    }
+    .modal button {
+        position: relative;
+        top: 20px;
+    }
+    .modal .input-row {
+        border: none;
+        margin-top: 0px;
+    }
+    .modal .input-row input {
+        text-align: end;
+    }
+    .btn .icon-share, .btn .icon-check {
+        font-family: Ratchicons;
+        font-weight: 100;
+        position: relative;
+    }
+    .btn.btn-block .icon-share, .btn.btn-block .icon-check {
+        left: 5px;
+    }
+    .bar-footer-secondary.mb-51~.content {
+        padding-bottom:90px;
+    }
+    .bar-footer-secondary.mb-91~.content {
+        padding-bottom:130px;
+    }
+    p.subtitle {
+        font-size: 0.7em;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .notifications .media-object.pull-left {
+        width: 10%;
+        height: auto;
+        font-size: 1.5em;
+        color: #7FC1FD;
+    }
+    .notifications .media-body {
+        padding-right: 22px;
+    }
+    .ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+    .icon-notification {
+        background-size: 90%;
+        background-position: 5%;
+        background-repeat: no-repeat;
+        color: rgba(0, 0, 0, 0);
+    }
+    .icon-notification:before {
+        content:'\e813';
+    }
+    .icon-pill {
+        background-image: url("../img/pill.png");
+        background-size: 75%;
+    }
+    .icon-thermometer {
+        background-image: url("../img/thermometer.png");
+    }
+    .icon-message {
+        background-image: url("../img/message.png");
+    }
+    .note .media-object {
+        width: 45%;
+        height: auto;
+    }
+    .note .media-body {
+        padding-left: 50%;
+    }
+    .note img {
+        width: 100%;
+    }
+    .content {
+        padding-bottom: 50px;
+        padding-top: 44px;
+    }
+    /******************************************************************************************/
+    .login {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 100;
+    }
+    .login .content-padded {
+        padding-bottom: 91px;
+        height: 100%;
+    }
+    .logo {
+        position: relative;
+        width: 50%;
+        left:25%;
+        margin-bottom: 60px;
+    }
+    .login img {
+        width: 100%;
+    }
+    .login input {
+        text-align: center;
+    }
+    #nav_notifiche{
+        position: relative;
+    }
+    .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    #sos a{
+        color: white;
+    }
+
+    .infoImage {
+        width: 100%;
+    }
+
+    .infoText {
+        font-size: 1.1em;
+        padding: 0.5em;
+        text-transform: none;
+    }

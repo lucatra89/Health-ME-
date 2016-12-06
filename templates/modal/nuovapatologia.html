@@ -1,0 +1,16 @@
+<div class="bar bar-standard bar-footer-secondary mb-51" >
+    <button class="btn btn-primary btn-block close-modal" id="salva">Aggiungi</button>
+</div>
+<div class="content content-padded">
+    <form class="input-group">
+        <div class="input-row" >
+            <select id="patologia"> 
+                {{#each glopatologie}}
+                <option value="{{this.Id}}">{{this.Nome}}</option>
+                {{/each}}
+            </select>
+
+        </div>
+    </form>
+</div>
+

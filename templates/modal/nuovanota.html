@@ -1,0 +1,38 @@
+
+<div class="bar bar-standard bar-footer-secondary mb-91" >
+    <button class="btn btn-positive btn-block " id="scatta">
+        Scatta <i class="fa fa-camera" ></i>
+    </button>
+</div>
+<div class="bar bar-standard bar-footer-secondary mb-51" id="aggiungi">
+    <button  class="btn btn-primary btn-block close-modal">
+        Aggiungi
+    </button>
+</div>
+<div class="content content-padded">
+
+    <form>
+        <div>
+            <label>Titolo</label>
+            <input type="text" value="" name="titolo" />
+        </div>
+        <div>
+            <label>Descrizione</label>
+            <textarea rows="3" name="descrizione" ></textarea>
+        </div>
+            <select name="patologia" >
+                <option value="">Nessuna patologia</option>
+                {{#each patologie}}
+                <option value="{{this.Id}}">{{this.Nome}}</option>
+                {{/each}}
+            </select>
+<!--        <div class="input-row">
+            <label>Ora</label>
+            <input type="text" placeholder="Orario allarme" name="ora" class="timepicker"/>
+        </div>   -->
+        <div class="input-row">
+            <label>Foto</label>
+            <input disabled="true" type="text" placeholder="Nessuna foto" name="foto"/>
+        </div>
+    </form>
+</div>
